@@ -1,0 +1,123 @@
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #title span {
+    display: inline-block;  
+    opacity: 0;  
+    animation: fadeInDown 1s ease forwards; 
+  }
+  
+
+:root {
+    --navbar-color: #2c3e50; /* Dark blue */
+    --body-color: #3498db; /* Lighter blue */
+    --text-color: black; /*Navbar buttons */
+    --hover-text-color: #ecf0f1; /*On hover */
+}
+
+body{
+    height: 87vh;
+    align-items: center;
+    background-color: var(--body-color);
+    margin: 0px;
+
+}
+
+#title{
+    height: auto;
+    text-align: center;
+    margin:0;
+    background-color: #174462;
+
+}
+
+.navbar{
+    border: 0 3px;
+    border-style: solid;
+    border-color: black;
+    display:flex;
+    justify-content: space-around;
+    background-color:var(--navbar-color);
+    align-items: center;
+    height: 50px;
+    
+    
+}
+.navbar-button{
+    transition: color 0.3s ease;
+    border:none;
+    padding:0;
+    font-size:18px;
+    text-decoration: none;
+    color:var(--text-color);
+    font-weight: bold;
+}
+.navbar-button:hover{
+    color:var(--hover-text-color);
+    cursor:pointer;
+}
+
+.slider {
+
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 300px; 
+    overflow: hidden;
+
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+
+}
+
+.slides img {
+    width: 600px;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+footer{
+    display: flex;
+    height: 150px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--navbar-color);
+    border:0px;
+    border-top:10px;
+    border-color:rgb(45, 45, 45);
+    border-style: solid;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:auto;
+}
+
+.fa-brands{
+    color:black;
+}

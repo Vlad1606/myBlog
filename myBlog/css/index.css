@@ -1,0 +1,126 @@
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+:root {
+    --navbar-color: #2c3e50; /* Dark blue */
+    --body-color: #3498db; /* Lighter blue */
+    --text-color: black; /*Navbar buttons */
+    --hover-text-color: #ecf0f1; /*On hover */
+}
+  
+  #title span {
+    display: inline-block;
+    opacity: 0;  
+    animation: fadeInDown 1s ease forwards;  
+  }
+
+body{
+    align-items: center;
+    background-color: var(--body-color);
+    margin: 0px;
+    justify-content: center;
+
+}
+
+.post{
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:40px auto;
+    width: 50%;
+    background-color: rgb(49, 114, 152);
+    border-radius: 20px;
+    border-color:rgb(2, 54, 70);
+    border-style: solid;
+    align-items: center;
+}
+.post h1,
+.post p {
+    margin:5px 30px;
+}
+.post h2{
+    text-align:center;
+    text-decoration: underline;
+    font-size:14px;
+    margin:0px;
+    
+}
+
+img{
+    height:400px;
+    width:30%;
+    margin-bottom: 30px;
+    border-radius:15px;
+    border:2px;
+    border-style: solid;
+    border-color:black;
+}
+#title{
+    background-color: red;
+    height: auto;
+    text-align: center;
+    margin:0;
+    background-color: #174462;
+}
+
+
+.navbar{
+    border: 0 3px;
+    border-style: solid;
+    border-color: black;
+    display:flex;
+    justify-content: space-around;
+    background-color:var(--navbar-color);
+    align-items: center;
+    height: 50px;
+    
+    
+}
+.navbar-button{
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    border:none;
+    padding:0;
+    font-size:18px;
+    text-decoration: none;
+    color:var(--text-color);
+    font-weight: bold;
+}
+.navbar-button:hover{
+    color:var(--hover-text-color);
+    cursor:pointer;
+}
+
+footer{
+    display: flex;
+    height: 150px;
+    background-color: var(--navbar-color);
+    border:0px;
+    border-top:10px;
+    border-color:rgb(45, 45, 45);
+    border-style: solid;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:40px;
+    
+}
+
+.date{
+    margin-left:auto;
+    margin-right:20px;
+    align-self: end;
+}
+
+.fa-brands{
+    color:black;
+}
+
